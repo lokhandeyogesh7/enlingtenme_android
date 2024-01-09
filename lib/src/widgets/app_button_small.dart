@@ -37,7 +37,7 @@ class AppButtonSmall extends StatelessWidget {
             }
           },
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.fromLTRB(8,4,8,4),
             child: Text(
               title,
               style: TextStyle(fontSize: 14, color: Colors.white),

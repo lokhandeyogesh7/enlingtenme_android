@@ -1,5 +1,6 @@
 import 'package:enlightenme/src/config/utils.dart';
 import 'package:enlightenme/src/theme/colors.dart';
+import 'package:enlightenme/src/widgets/event_calendar.dart';
 import 'package:enlightenme/src/widgets/sub_titile_text.dart';
 import 'package:enlightenme/src/widgets/title_text.dart';
 import 'package:flutter/material.dart';
@@ -23,9 +24,14 @@ class _MentorEventListScreenState extends State<MentorEventListScreen> {
           },
           child: const Icon(Icons.add),
         ),
-        body: ListView.builder(
-          itemCount: 10,
-          itemBuilder: (context, index) => eventListContainer(context),
+        body: Column(
+          children: [
+            Expanded(child: EventCalendarWidget()),
+         /*   ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context, index) => eventListContainer(context),
+            ),*/
+          ],
         ),
       ),
     );

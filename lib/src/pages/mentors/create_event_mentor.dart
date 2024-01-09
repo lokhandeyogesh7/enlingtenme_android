@@ -68,7 +68,11 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      appBar: AppBar(title: Text("Create Event")),
+      appBar: AppBar(
+        title: Text("Create Event"),
+        backgroundColor: Colors.white,
+        elevation: 4,
+      ),
       bottomNavigationBar: Container(
         margin: const EdgeInsets.all(10),
         child: AppButton(

@@ -4,5 +4,5 @@ class CustomAppBar extends AppBar {
   CustomAppBar.screen({
     required String title,
     List<Widget>? actions,
-  }) : super(title: Text(title));
+  }) : super(title: Text(title),backgroundColor: Colors.white,elevation: 4);
 }

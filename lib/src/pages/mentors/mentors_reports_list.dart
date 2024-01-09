@@ -73,7 +73,7 @@ class _MentorsReportsListScreenState extends State<MentorsReportsListScreen> {
                   ),
                 ),
                 Expanded(
-                    flex: 1,
+                    flex: 2,
                     child: AppButtonSmall(
                       onClick: () {
                         Navigator.pushNamed(context, Utils.viewReports);

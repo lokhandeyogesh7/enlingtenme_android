@@ -1,4 +1,5 @@
 import 'package:enlightenme/src/widgets/app_button.dart';
+import 'package:enlightenme/src/widgets/custom_app_bar.dart';
 import 'package:enlightenme/src/widgets/title_text.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -23,6 +24,7 @@ class _MentorsProfileScreenState extends State<MentorsProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: CustomAppBar.screen(title: "Profile"),
       bottomNavigationBar: Container(
         margin: const EdgeInsets.all(10),
         child: AppButton(
